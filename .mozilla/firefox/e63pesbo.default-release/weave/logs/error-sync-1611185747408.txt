@@ -1,0 +1,48 @@
+1611185147340	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1611185747341	Sync.Service	DEBUG	User-Agent: Firefox/84.0.2 (Linux x86_64) FxSync/1.86.0.20210107154745.desktop
+1611185747341	Sync.Service	INFO	Starting sync at 2021-01-20 15:35:47 in browser session ay24_hOrF6es
+1611185747341	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1611185747344	Sync.Status	INFO	Resetting Status.
+1611185747344	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1611185747344	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1611185747344	FirefoxAccounts	DEBUG	getOAuthToken enter
+1611185747345	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1611185747345	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1611185747345	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1611185747403	Sync.Resource	DEBUG	GET fail 503 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161726147/info/collections
+1611185747403	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161726147/info/collections failed with status 503
+1611185747403	Sync.ErrorHandler	DEBUG	Got Retry-After: 3600
+1611185747403	Sync.Status	DEBUG	Status.sync: success.sync => error.sync.reason.serverMaintenance
+1611185747403	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1611185747403	Sync.SyncScheduler	DEBUG	Got backoff notification: 3600000ms
+1611185747403	Sync.SyncScheduler	DEBUG	Fuzzed minimum next sync: 1611189347403
+1611185747403	Sync.Service	ERROR	Aborting sync: failed to get collections.
+1611185747404	Sync.Resource	WARN	Got exception parsing response body: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data(resource://services-sync/resource.js:229:21) JS Stack trace: _processResponse/<@resource.js:229:21
+get@XPCOMUtils.jsm:58:51
+format@Log.jsm:642:19
+formatText@Log.jsm:571:44
+format@Log.jsm:589:12
+append@Log.jsm:682:37
+append@logmanager.js:156:44
+log@Log.jsm:379:16
+error@Log.jsm:387:10
+observe@policies.js:924:19
+observe@observers.js:135:21
+notify@observers.js:87:18
+notify@util.js:204:19
+WrappedNotify@util.js:214:17
+1611185747404	Sync.Resource	DEBUG	Parse fail: Response body starts: <html>
+<head><title>503 Service Unavailable</title></head>
+<body bgcolor="white">
+<center><h1>503 Se
+1611185747404	Sync.ErrorHandler	ERROR	Sync encountered an error: ({data:"<html>\n<head><title>503 Service Unavailable</title></head>\n<body bgcolor=\"white\">\n<center><h1>503 Service Cloudy: Try again later. </h1></center>\n</body>\n</html>\n", url:"https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161726147/info/collections", status:503, success:false, headers:{'alt-svc':"clear", 'content-length':"162", 'content-type':"text/html", date:"Wed, 20 Jan 2021 23:35:47 GMT", etag:"\"60089b07-a2\"", 'retry-after':"3600", server:"openresty/1.15.8.2", via:"1.1 google", 'x-firefox-spdy':"h2"}, get obj() {
+        if (!redefining) {
+          // Make sure we don't get into an infinite recursion loop if
+          // the getter lambda does something shady.
+          redefining = true;
+          return redefine(aObject, aName, aLambda.apply(aObject));
+        }
+      }})
+1611185747405	Sync.SyncScheduler	DEBUG	Starting client-initiated backoff. Next sync in 3760242.3743849928 ms.
+1611185747405	Sync.SyncScheduler	DEBUG	Next sync in 3760242.3743849928 ms. (why=client-backoff-schedule)
+1611185747408	Sync.Service	DEBUG	Exception calling anonymous function: {"data":"<html>\n<head><title>503 Service Unavailable</title></head>\n<body bgcolor=\"white\">\n<center><h1>503 Service Cloudy: Try again later. </h1></center>\n</body>\n</html>\n","url":"https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/161726147/info/collections","status":503,"success":false,"headers":{"alt-svc":"clear","content-length":"162","content-type":"text/html","date":"Wed, 20 Jan 2021 23:35:47 GMT","etag":"\"60089b07-a2\"","retry-after":"3600","server":"openresty/1.15.8.2","via":"1.1 google","x-firefox-spdy":"h2"}}
