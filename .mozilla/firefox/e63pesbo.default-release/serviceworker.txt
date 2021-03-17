@@ -93,11 +93,11 @@ true
 https://seekingalpha.com/
 https://seekingalpha.com/samw-service-worker.js
 true
-{fad01afb-409c-4dd5-a1dc-4892d8f72169}
+{e6a47cbb-c8b8-46aa-b48c-319c09e920ff}
 0
-1615309965414758
-1615309965622595
-1615309962102990
+1615935740333825
+1615935740557609
+1615935736491268
 #
 
 https://developers.google.com/
