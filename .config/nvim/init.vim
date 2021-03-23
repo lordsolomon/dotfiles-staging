@@ -27,8 +27,10 @@ Plug 'preservim/nerdtree'
 Plug 'junegunn/limelight.vim'
 Plug 'godlygeek/tabular'
 Plug 'jbyuki/instant.nvim'
-Plug 'sainnhe/gruvbox-material'
-Plug 'b4skyx/serenade'
+"Plug 'sainnhe/gruvbox-material'
+"Plug 'b4skyx/serenade'
+Plug 'gruvbox-community/gruvbox'
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
 filetype plugin indent on    " required
@@ -40,9 +42,16 @@ highlight StatusLineNC ctermfg=white
 "Binds file-tree toggle to ctr+o
 map <C-o> :NERDTreeToggle<CR>
 
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
+let g:gruvbox_italic=1
+
+set termguicolors
+
 "Enable both following let if limelight gives error
-" Color name (:help cterm-colors) or ANSI code
-" let g:limelight_conceal_ctermfg = '8'
+"Color name (:help cterm-colors) or ANSI code
+"let g:limelight_conceal_ctermfg = '8'
+let g:limelight_conceal_ctermfg = 240
 
 " Color name (:help gui-colors) or RGB color
 " let g:limelight_conceal_guifg = 'DarkGrey'
@@ -68,14 +77,14 @@ nnoremap j gj
 nnoremap k gk
 
 "Airline theme
-let g:airline_theme='serenade'
+let g:airline_theme='gruvbox'
 
 let g:neodark#terminal_transparent = 1 " default: 0
 let g:neodark#use_256color = 1 " default: 0
 
 "Vim theme
 syntax on
-colorscheme serenade
+colorscheme gruvbox
 
 "MD syntax **text** _text_ to conceal
 let g:pencil#conceallevel = 3     " 0=disable, 1=one char, 2=hide char, 3=hide all (def)

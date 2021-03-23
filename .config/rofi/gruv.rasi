@@ -4,7 +4,7 @@
     scrollbar: true;
 
     /* Color Definitions */
-    bg0-soft:     #2a2f33;
+    bg0-soft:     #282828;
     bg1:          #31363b;
     bg3:          #474f54;
     fg0:          #fbf1c7;

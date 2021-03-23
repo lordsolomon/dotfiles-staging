@@ -8,11 +8,11 @@
     notification_height = 0
     separator_height = 0
     padding = 20
-    horizontal_padding = 20
-    frame_width = 2
-    frame_color = "#767c82"
+    horizontal_padding = 50
+    frame_width = 5
+    frame_color = "#63cdcf"
     separator_color = frame
-    font = Sarasa Mono K
+    font = Fira Code Regular Nerd Font Complete
     height = 4
     markup = full
     format = "<span foreground='#b3cfa7'><b>%s</b>%p</span>\n%b"
@@ -33,7 +33,7 @@
     startup_notification = false
     browser = /usr/bin/firefox -new-tab
     verbosity = mesg
-    corner_radius = 5
+    corner_radius = 0
     force_xinerama = false
     mouse_left_click = close_current
     mouse_middle_click = do_action
@@ -47,18 +47,18 @@
 
 [urgency_low]
 timeout = 4
-background = "#262626"
-foreground = "#bfddb2"
-frame_color = "#767c82"
+background = "#282828"
+foreground = "#63cdcf"
+frame_color = "#5cb8a7"
 
 [urgency_normal]
 timeout = 8
-background = "#262626"
-foreground = "#bfddb2"
-frame_color = "#767c82"
+background = "#282828"
+foreground = "#63cdcf"
+frame_color = "#63cdcf"
 
 [urgency_critical]
 timeout = 0
-background = "#262626"
-foreground = "#bfddb2"
-frame_color = "#b8bb26"
+background = "#282828"
+foreground = "#63cdcf"
+frame_color = "#c94f6d"

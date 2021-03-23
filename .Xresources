@@ -11,38 +11,38 @@ st.font: 							Sarasa Term K:pixelsize=18:antialias=true
 ! st.opacity: 255
 
 ! special
-*.foreground:   #bfddb2
-*.background:   #262626
-*.cursorColor:  #bfddb2
+*.foreground:   #fbf1c7
+*.background:   #282828
+*.cursorColor:  #928374
 
 ! black
-*.color0:       #32383d
-*.color8:       #aaafb3
+*.color0:       #282828
+*.color8:       #7c6f64
 
 ! red
-*.color1:       #e76f51
-*.color9:       #e76f51
+*.color1:       #cc241d
+*.color9:       #fb4934
 
 ! green
-*.color2:       #a5a58d
-*.color10:      #a5a58d
+*.color2:       #98971a
+*.color10:      #b8bb26
 
 ! yellow
-*.color3:       #e9c46a
-*.color11:      #e9c46a
+*.color3:       #d79921
+*.color11:      #fabd2f
 
 ! blue
-*.color4:       #4361ee
-*.color12:      #4361ee
+*.color4:       #458588
+*.color12:      #83a598
 
 ! magenta
-*.color5:       #bdb2ff
-*.color13:      #bdb2ff
+*.color5:       #b16286
+*.color13:      #d3869b
 
 ! cyan
-*.color6:       #83c5be
-*.color14:      #83c5be
+*.color6:       #689d6a
+*.color14:      #8ec07c
 
 ! white
-*.color7:       #ede0d4
-*.color15:      #ede0d4
+*.color7:       #a89984
+*.color15:      #fbf1c7

@@ -5,23 +5,23 @@
 @import "userChrome-hover.css";
 
 :root { 
-  --dark-0: #212121;
-  --dark-base: #262626;
-  --dark-1: #363636;
-  --dark-2: #404040;
-  --dark-3: #545454;
-  --dark-4: #5E5E5E;
-  --light-0: #E2EFDC;
-  --light-base: #bfddb2;
-  --light-1: #B2D7A3;
-  --light-2: #A7D095;
-  --light-3: #9BCA86;
-  --light-4: #8FC478;
-  --accent: #4361ee;
-  --yellow: #e9c46a;
-  --green: #bfddb2;
-  --red: #e76f51;
-  --extension-icon-mask: grayscale(85%) invert(34%) sepia(0%) saturate(0%) hue-rotate(178deg) brightness(91%) contrast(90%);
+  --dark-0: #242424;
+  --dark-base: #282828;
+  --dark-1: #383838;
+  --dark-2: #424242;
+  --dark-3: #575757;
+  --dark-4: #616161;
+  --light-0: #ACA195;
+  --light-base: #928374;
+  --light-1: #867869;
+  --light-2: #7B6E60;
+  --light-3: #6F6358;
+  --light-4: #64594F;
+  --accent: #fbf1c7;
+  --yellow: #fabd2f;
+  --green: #b8bb26;
+  --red: #fb4934;
+  --extension-icon-mask: grayscale(85%) invert(31%) sepia(14%) saturate(14%) hue-rotate(316deg) brightness(97%) contrast(83%);
     
   /* expanded width of the sidebar. 
     used for userChrome-static, and hover */
@@ -53,21 +53,21 @@
 }
 
 :root[privatebrowsingmode="temporary"]{ 
-  --dark-0: #1C0E34;
-  --dark-base: #20103c;
-  --dark-1: #2F1D4E;
-  --dark-2: #38225D;
-  --dark-3: #4A2D7B;
-  --dark-4: #53338A;
-  --light-0: #CC6B9C;
-  --light-base: #B9407C;
-  --light-1: #AB3B73;
-  --light-2: #9C3569;
-  --light-3: #8D305E;
-  --light-4: #7D2B54;
-  --accent: #e9207e;
-  --yellow: #C9B336;
-  --green: #36C987;
-  --red: #C9365D;
-  --extension-icon-mask: grayscale(85%) invert(13%) sepia(80%) saturate(3107%) hue-rotate(256deg) brightness(84%) contrast(93%); 
+  --dark-0: #1F1F1F;
+  --dark-base: #232323;
+  --dark-1: #333333;
+  --dark-2: #3D3D3D;
+  --dark-3: #525252;
+  --dark-4: #5C5C5C;
+  --light-0: #878787;
+  --light-base: #696969;
+  --light-1: #5E5E5E;
+  --light-2: #545454;
+  --light-3: #4A4A4A;
+  --light-4: #404040;
+  --accent: #a89984;
+  --yellow: #d79921;
+  --green: #98971a;
+  --red: #cc241d;
+  --extension-icon-mask: grayscale(85%) invert(29%) sepia(12%) saturate(0%) hue-rotate(292deg) brightness(102%) contrast(92%); 
 }
